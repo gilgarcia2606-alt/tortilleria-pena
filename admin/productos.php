@@ -6,7 +6,6 @@ $categorias = $pdo->query('SELECT id_categoria, nombre FROM categorias ORDER BY 
 $unidades = ['kg', 'paquete', 'orden', 'pieza'];
 
 // Guarda la foto subida en assets/img/productos y regresa el nombre del archivo
-function subir_foto($archivo, &$errores)
 {
     if (empty($archivo['name']) || $archivo['error'] === UPLOAD_ERR_NO_FILE) {
         return null;
