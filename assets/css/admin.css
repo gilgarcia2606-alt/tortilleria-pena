@@ -1,0 +1,81 @@
+/* Estilos del panel de administración */
+body.panel {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background: #fcfbf7;
+    color: #1f2a14;
+}
+
+.barra-admin { background: #fff; border-bottom: 1px solid #efeeea; position: sticky; top: 0; z-index: 1020; }
+.marca-admin { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #0d1426; line-height: 1.15; }
+.marca-admin small { color: #4a6a2a; font-size: .75rem; font-weight: 600; }
+.logo-admin { width: 36px; height: 36px; border-radius: 8px; background: #fff; border: 1px solid #e6e1d4; display: flex; align-items: center; justify-content: center; }
+.logo-admin img { height: 28px; }
+.menu-admin { display: flex; flex-wrap: wrap; gap: 3px; padding: 4px; background: #f6f2eb; border: 1px solid #ece6da; border-radius: 10px; }
+.menu-admin a { display: flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 8px; color: #55584f; font-weight: 600; font-size: .9rem; text-decoration: none; }
+.menu-admin a.activo { background: #586a2f; color: #fff; box-shadow: 0 0 0 1px #2f3a18 inset; }
+.menu-admin a:not(.activo):hover { background: #ebe5d8; }
+.usuario-admin { display: flex; align-items: center; gap: 8px; border: 0; line-height: 1.1; font-size: .85rem; }
+.avatar { width: 34px; height: 34px; border-radius: 50%; background: #dfe6d6; border: 1px solid #c9d3bd; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; color: #2d3a1c; }
+.en-linea { color: #2e9b55; font-size: .7rem; font-weight: 600; }
+.en-linea i { font-size: .45rem; vertical-align: middle; }
+
+.titulo-panel { font-family: 'Manrope', sans-serif; font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; margin-bottom: 2px; }
+.sub-panel { color: #5b5f55; font-size: .92rem; margin: 0; }
+.chip-fecha { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #e6e1d4; background: #fff; border-radius: 8px; padding: 7px 12px; font-size: .88rem; color: #5b5f55; }
+
+.caja { background: #fff; border: 1px solid #ece8de; border-radius: 12px; overflow: hidden; }
+.titulo-caja { font-family: 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 700; }
+.enlace-verde { color: #4f5d2e; font-weight: 700; font-size: .88rem; text-decoration: none; }
+
+.btn-verde { background: #4f5d2e; border: 1px solid #4f5d2e; color: #fff; font-weight: 700; border-radius: 8px; }
+.btn-verde:hover, .btn-verde:focus { background: #3b4624; border-color: #3b4624; color: #fff; }
+.btn-claro { background: #f6f3ea; border: 1px solid #e6e1d4; color: #2b3220; font-weight: 600; border-radius: 8px; }
+.btn-claro:hover { background: #ebe5d8; color: #2b3220; }
+.btn-icono { border: 0; background: none; color: #4f5d2e; font-size: 1.05rem; padding: 4px 7px; }
+.btn-icono:hover { background: #f1eee4; }
+
+.indicador { display: flex; justify-content: space-between; background: #fff; border: 1px solid #ece8de; border-radius: 12px; padding: 16px 18px; height: 100%; color: inherit; text-decoration: none; transition: transform .2s; }
+a.indicador:hover { transform: translateY(-2px); color: inherit; }
+.indicador small { display: block; font-size: .68rem; letter-spacing: .06em; color: #8a8d80; font-weight: 700; text-transform: uppercase; }
+.indicador strong { display: block; font-family: 'Manrope', sans-serif; font-size: 1.8rem; font-weight: 800; margin: 4px 0 2px; }
+.indicador strong.texto-indicador { font-size: 1.05rem; line-height: 1.3; margin: 8px 0 6px; }
+.indicador span { font-size: .78rem; font-weight: 600; }
+.indicador > i { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0; }
+.fondo-ambar { background: #fdf1d8; color: #9a6500; } .tono-ambar { color: #9a6500; }
+.fondo-azul { background: #e3ecfb; color: #2f5aa8; } .tono-azul { color: #2f5aa8; }
+.fondo-rojo { background: #fde3e3; color: #c0392b; } .tono-rojo { color: #c0392b; }
+.fondo-verde { background: #e6eedb; color: #4f5d2e; } .tono-verde { color: #4f7a2e; }
+
+.tabla { font-size: .9rem; }
+.tabla thead th { background: #f6f3ea; color: #2b3220; font-weight: 700; padding: 12px 14px; border-bottom: 0; white-space: nowrap; }
+.tabla td { padding: 11px 14px; border-color: #f0ede5; }
+.etiqueta-gris { display: inline-block; background: #f1eee4; border-radius: 6px; padding: 2px 8px; font-size: .78rem; }
+
+.buscador-panel { position: relative; min-width: 220px; }
+.buscador-panel i { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); color: #8a8d80; }
+.buscador-panel .form-control { padding-left: 38px; }
+.chip { padding: 7px 12px; border-radius: 8px; border: 1px solid #e1dccf; color: #3a3f33; font-weight: 600; font-size: .85rem; text-decoration: none; background: #fff; }
+.chip span { color: #8a8d80; font-weight: 500; margin-left: 2px; }
+.chip.activo { background: #586a2f; border-color: #586a2f; color: #fff; }
+.chip.activo span { color: #dfe6d6; }
+.selector-estado { width: auto; font-size: .82rem; padding-top: 4px; padding-bottom: 4px; padding-right: 2.2rem; }
+
+.producto-admin .foto { position: relative; aspect-ratio: 2 / 1; background: #f1eee4; }
+.producto-admin .foto img { width: 100%; height: 100%; object-fit: cover; }
+.producto-admin .foto .estado { position: absolute; top: 10px; left: 10px; }
+.producto-admin .destacado { position: absolute; top: 8px; right: 10px; color: #c9a14a; font-size: 1.1rem; text-shadow: 0 1px 3px rgba(0, 0, 0, .3); }
+.producto-admin.inactivo .foto img { filter: grayscale(1); opacity: .6; }
+.precio-admin { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.2rem; color: #3b4624; }
+.precio-admin small { font-weight: 500; font-size: .8rem; color: #7b7f72; }
+
+.modal-content { border-radius: 12px; border: 0; }
+.modal-title { font-family: 'Manrope', sans-serif; font-weight: 700; }
+
+/* Al imprimir el reporte (Exportar a PDF) se ocultan el menú y los botones */
+@media print {
+    .barra-admin, .no-imprimir, .alert { display: none !important; }
+    body.panel { background: #fff; }
+    .caja, .indicador { break-inside: avoid; }
+    .col-xl-3 { width: 25%; float: left; }
+    .col-xl-8, .col-xl-4 { width: 100%; }
+}
